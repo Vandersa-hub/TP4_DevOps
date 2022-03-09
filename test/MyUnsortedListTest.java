@@ -128,6 +128,11 @@ public class MyUnsortedListTest {
 		
 	}
 	
+	@Test
+	public void shouldBeEquals() {
+		assertTrue(myIntList.equals(myIntList));
+	}
+
 	private void setMyListWithValues() {
 		myIntList = MyUnsortedList.of(1,2,3,4,5);
 	}
